@@ -8,39 +8,88 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="layout">
-    <aside class="sidebar">
+  <div class="wrapper">
+    <aside class="profile">
       <img class="avatar" src="https://avatars.githubusercontent.com/u/25149765?v=4" alt="Arash Madadi" />
       <h1>Arash Madadi</h1>
-      <p class="role">Full-Stack Developer</p>
-      <p class="affiliation">Geospatial / GIS<br />TypeScript, React, Python, FastAPI, PostgreSQL/PostGIS</p>
-      <p class="location">Potsdam / Berlin, Germany</p>
+      <p class="title">Full-Stack Developer</p>
+      <p>Geospatial / GIS<br />TypeScript · React · Python · FastAPI<br />PostgreSQL / PostGIS</p>
+      <p>Potsdam / Berlin, Germany</p>
       <p><a href="mailto:arashmad.dev@gmail.com">arashmad.dev@gmail.com</a></p>
-      <p class="links">
-        <a href="https://github.com/arashmad">GitHub</a> /
-        <a href="https://www.linkedin.com/in/arashmad/">LinkedIn</a> /
+      <p class="social-links">
+        <a href="https://github.com/arashmad">GitHub</a>
+        <a href="https://www.linkedin.com/in/arashmad/">LinkedIn</a>
         <a href="profile-content.md">Resume</a>
       </p>
     </aside>
 
-    <section class="content">
-      <section id="about">
-        <h2>About</h2>
+    <main class="content">
+      <section>
+        <h2>About Me</h2>
         <p>
-          I am a full-stack developer with a geospatial/GIS background and professional experience building web applications,
+          I am a full-stack developer with a geospatial/GIS background. My work focuses on web applications,
           backend APIs, data-driven tools, map-based interfaces, and spatial data workflows.
         </p>
         <p>
-          My work combines TypeScript, React, Python, FastAPI, PostgreSQL/PostGIS, Docker, API design,
-          spatial data processing, and frontend-backend integration across product and research environments.
+          I work across frontend, backend, databases, and spatial data layers using TypeScript, React,
+          Python, FastAPI, PostgreSQL, PostGIS, Docker, and modern development workflows.
+        </p>
+        <p>
+          I have experience in product and research environments, including frontend implementation,
+          backend service design, database-backed features, geospatial data processing, testing,
+          debugging, code review, and technical clarification in cross-functional teams.
         </p>
       </section>
 
-      <section id="skills">
+      <section>
+        <h2>Experience</h2>
+        <ul class="timeline">
+          <li><strong>[May 2025 – Present]</strong> Full-Stack Developer at Green Account, building geospatial product features with React, Remix, PostgreSQL/PostGIS, and Mapbox GL.</li>
+          <li><strong>[Sep. 2021 – Apr. 2025]</strong> Full-Stack Developer at the German Research Centre for Geosciences (GFZ), developing geospatial applications, APIs, and research data workflows.</li>
+          <li><strong>[Jul. 2020 – Jul. 2021]</strong> Geospatial Backend Developer at NaghshAra Co., developing Python backend APIs and spatial data workflows for GIS applications.</li>
+          <li><strong>[Feb. 2017 – Jun. 2020]</strong> Software Developer at NaghshClick Co., building mobile data-collection and dashboard tools backed by MySQL-based data workflows.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Selected Work</h2>
+
+        <article class="entry">
+          <h3>Geospatial Product Features</h3>
+          <p>
+            At Green Account, I build and maintain full-stack product features in a TypeScript-based platform using
+            React, Remix, PostgreSQL/PostGIS, and Mapbox GL. My work includes map interaction, spatial filtering,
+            vector-tile rendering, data visibility rules, product-facing map views, admin workflows, and data-driven UI features.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3>Research Geospatial Applications</h3>
+          <p>
+            At GFZ, I helped evolve prototype-style research applications into more structured client-server and
+            API-service workflows. I designed API services for querying, processing, and exposing geospatial research
+            datasets to React/TypeScript mapping and visualization frontends.
+          </p>
+          <p>
+            I also improved API boundaries, request/response structures, and integration patterns between frontend
+            and backend services, and migrated legacy Flask APIs to FastAPI.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3>GeoInsight API</h3>
+          <p>
+            Personal portfolio project: a geospatial API backend with PostgreSQL/PostGIS integration, database sessions,
+            migrations, health checks, API test coverage, GitHub Actions CI workflows, and non-production deployment practice.
+          </p>
+        </article>
+      </section>
+
+      <section>
         <h2>Technical Skills</h2>
-        <ul class="compact-list">
+        <ul>
           <li><strong>Languages:</strong> TypeScript, JavaScript, Python, SQL, Bash</li>
-          <li><strong>Frontend:</strong> React, Remix, Tailwind CSS, shadcn/ui, React Hook Form, data-driven UI, frontend API integration</li>
+          <li><strong>Frontend:</strong> React, Remix, Tailwind CSS, shadcn/ui, React Hook Form, frontend API integration, data-driven UI</li>
           <li><strong>Backend:</strong> FastAPI, REST APIs, SQLAlchemy, Pydantic, API design, service/repository patterns</li>
           <li><strong>Databases:</strong> PostgreSQL, PostGIS, Drizzle ORM, relational modeling, migrations, spatial queries</li>
           <li><strong>Geospatial:</strong> PostGIS, GeoPandas, Shapely, Rasterio, Mapbox GL, Leaflet, OpenLayers, vector tiles, spatial filtering</li>
@@ -50,65 +99,17 @@
         </ul>
       </section>
 
-      <section id="experience">
-        <h2>Professional Experience</h2>
-
-        <h3>Full-Stack Developer, Green Account</h3>
-        <p class="meta">05/2025 – Present · Berlin, Germany</p>
-        <ul>
-          <li>Build and maintain full-stack product features in a TypeScript-based platform using React, Remix, PostgreSQL/PostGIS, and Mapbox GL.</li>
-          <li>Develop geospatial product workflows involving map interaction, spatial filtering, vector-tile rendering, and data visibility rules.</li>
-          <li>Work on backend/frontend consistency for geospatial data access, product-facing map views, admin workflows, and data-driven UI features.</li>
-          <li>Improve internal admin tools, table UX, navigation structure, login/onboarding tracking, and product workflows.</li>
-          <li>Contribute to technical clarification, implementation, testing, code review feedback, debugging, iterative improvements, and CI-supported workflows using GitHub Actions.</li>
-          <li>Collaborate with the CTO, product manager, and data engineer in a small cross-functional team.</li>
-        </ul>
-
-        <h3>Full-Stack Developer, German Research Centre for Geosciences (GFZ)</h3>
-        <p class="meta">09/2021 – 04/2025 · Potsdam, Germany</p>
-        <ul>
-          <li>Helped evolve prototype-style research applications into more structured client-server and API-service workflows.</li>
-          <li>Designed API services for querying, processing, and exposing geospatial research datasets to React/TypeScript mapping and visualization frontends.</li>
-          <li>Improved API boundaries, request/response structures, and integration patterns between React/TypeScript frontends and Python backend services.</li>
-          <li>Migrated legacy Flask APIs to FastAPI, improving maintainability and supporting a more modular backend architecture.</li>
-        </ul>
-
-        <h3>Geospatial Backend Developer, NaghshAra Co.</h3>
-        <p class="meta">07/2020 – 07/2021 · Tehran, Iran</p>
-        <ul>
-          <li>Developed Python backend APIs and spatial data workflows for GIS applications.</li>
-          <li>Automated geospatial data transformation processes to improve data accessibility and reduce manual processing.</li>
-        </ul>
-
-        <h3>Software Developer, NaghshClick Co.</h3>
-        <p class="meta">02/2017 – 06/2020 · Tehran, Iran</p>
-        <ul>
-          <li>Developed mobile data-collection and dashboard tools backed by MySQL-based data workflows.</li>
-          <li>Supported GIS-related client discussions and operational reporting workflows.</li>
-        </ul>
-      </section>
-
-      <section id="projects">
-        <h2>Selected Project</h2>
-        <h3>GeoInsight API</h3>
-        <ul>
-          <li>Built and tested a geospatial API backend with PostgreSQL/PostGIS integration, database sessions, migrations, health checks, and API test coverage.</li>
-          <li>Added GitHub Actions-based CI workflows for automated testing and quality checks.</li>
-          <li>Practiced non-production cloud deployment workflows, including backend deployment and CI/CD-based deployment steps.</li>
-        </ul>
-      </section>
-
-      <section id="education">
+      <section>
         <h2>Education</h2>
         <p><strong>M.Sc. Geospatial Information Systems (GIS)</strong>, University of Tehran, 09/2011 – 01/2014</p>
         <p><strong>B.Sc. Civil Engineering – Surveying</strong>, National Geographical Organization of Iran, 09/2005 – 01/2011</p>
       </section>
 
-      <section id="languages">
+      <section>
         <h2>Languages</h2>
         <p>English: C1 · German: B1 · Persian: Native</p>
       </section>
-    </section>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
