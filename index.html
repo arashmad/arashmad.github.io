@@ -1,115 +1,381 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Arash Madadi</title>
-  <meta name="description" content="Arash Madadi - Full-Stack Developer with a geospatial/GIS background." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="wrapper">
-    <aside class="profile">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/25149765?v=4" alt="Arash Madadi" />
-      <h1>Arash Madadi</h1>
-      <p class="title">Full-Stack Developer</p>
-      <p>Geospatial / GIS<br />TypeScript · React · Python · FastAPI<br />PostgreSQL / PostGIS</p>
-      <p>Potsdam / Berlin, Germany</p>
-      <p><a href="mailto:arashmad.dev@gmail.com">arashmad.dev@gmail.com</a></p>
-      <p class="social-links">
-        <a href="https://github.com/arashmad">GitHub</a>
-        <a href="https://www.linkedin.com/in/arashmad/">LinkedIn</a>
-        <a href="profile-content.md">Resume</a>
-      </p>
-    </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arash Madadi — Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-wrap">
+      <div class="layout">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+          <div class="avatar-wrap">
+            <img
+              class="avatar"
+              src="https://avatars.githubusercontent.com/u/25149765?v=4"
+              alt="Arash Madadi"
+            />
+            <p class="name">Arash Madadi</p>
+            <p class="title-tag">
+              Full-Stack Developer<br />TypeScript · Python · Geospatial
+            </p>
+          </div>
 
-    <main class="content">
-      <section>
-        <h2>About Me</h2>
-        <p>
-          I am a full-stack developer with a geospatial/GIS background. My work focuses on web applications,
-          backend APIs, data-driven tools, map-based interfaces, and spatial data workflows.
-        </p>
-        <p>
-          I work across frontend, backend, databases, and spatial data layers using TypeScript, React,
-          Python, FastAPI, PostgreSQL, PostGIS, Docker, and modern development workflows.
-        </p>
-        <p>
-          I have experience in product and research environments, including frontend implementation,
-          backend service design, database-backed features, geospatial data processing, testing,
-          debugging, code review, and technical clarification in cross-functional teams.
-        </p>
-      </section>
+          <div class="divider"></div>
 
-      <section>
-        <h2>Experience</h2>
-        <ul class="timeline">
-          <li><strong>[May 2025 – Present]</strong> Full-Stack Developer at Green Account, building geospatial product features with React, Remix, PostgreSQL/PostGIS, and Mapbox GL.</li>
-          <li><strong>[Sep. 2021 – Apr. 2025]</strong> Full-Stack Developer at the German Research Centre for Geosciences (GFZ), developing geospatial applications, APIs, and research data workflows.</li>
-          <li><strong>[Jul. 2020 – Jul. 2021]</strong> Geospatial Backend Developer at NaghshAra Co., developing Python backend APIs and spatial data workflows for GIS applications.</li>
-          <li><strong>[Feb. 2017 – Jun. 2020]</strong> Software Developer at NaghshClick Co., building mobile data-collection and dashboard tools backed by MySQL-based data workflows.</li>
-        </ul>
-      </section>
+          <div>
+            <p class="sidebar-section-label">Contact</p>
+            <ul class="contact-list">
+              <li>
+                <svg
+                  class="c-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <polyline points="2,4 12,13 22,4" />
+                </svg>
+                <a href="mailto:arashmad.dev@gmail.com"
+                  >arashmad.dev@gmail.com</a
+                >
+              </li>
+              <li>
+                <svg class="c-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                  />
+                </svg>
+                <a href="https://linkedin.com/in/arashmad" target="_blank"
+                  >linkedin.com/in/arashmad</a
+                >
+              </li>
+              <li>
+                <svg class="c-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"
+                  />
+                </svg>
+                <a href="https://github.com/arashmad" target="_blank"
+                  >github.com/arashmad</a
+                >
+              </li>
+              <li>
+                <svg
+                  class="c-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                  />
+                  <circle cx="12" cy="9" r="2.5" />
+                </svg>
+                Potsdam / Berlin, Germany
+              </li>
+            </ul>
+          </div>
 
-      <section>
-        <h2>Selected Work</h2>
+          <div class="divider"></div>
 
-        <article class="entry">
-          <h3>Geospatial Product Features</h3>
-          <p>
-            At Green Account, I build and maintain full-stack product features in a TypeScript-based platform using
-            React, Remix, PostgreSQL/PostGIS, and Mapbox GL. My work includes map interaction, spatial filtering,
-            vector-tile rendering, data visibility rules, product-facing map views, admin workflows, and data-driven UI features.
-          </p>
-        </article>
+          <div>
+            <p class="sidebar-section-label">Skills</p>
+            <div class="skills-group">
+              <div>
+                <p class="skill-cat-label">Languages</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">Bash</span>
+                </div>
+              </div>
+              <div>
+                <p class="skill-cat-label">Frontend</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Remix</span>
+                  <span class="skill-tag">Tailwind</span>
+                  <span class="skill-tag">shadcn/ui</span>
+                </div>
+              </div>
+              <div>
+                <p class="skill-cat-label">Backend</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">FastAPI</span>
+                  <span class="skill-tag">Flask</span>
+                  <span class="skill-tag">SQLAlchemy</span>
+                  <span class="skill-tag">Pydantic</span>
+                </div>
+              </div>
+              <div>
+                <p class="skill-cat-label">Databases</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">PostGIS</span>
+                  <span class="skill-tag">Drizzle ORM</span>
+                  <span class="skill-tag">MySQL</span>
+                </div>
+              </div>
+              <div>
+                <p class="skill-cat-label">Geospatial</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Mapbox GL</span>
+                  <span class="skill-tag">Leaflet</span>
+                  <span class="skill-tag">GeoPandas</span>
+                  <span class="skill-tag">Rasterio</span>
+                  <span class="skill-tag">Shapely</span>
+                </div>
+              </div>
+              <div>
+                <p class="skill-cat-label">Tools</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">GitHub Actions</span>
+                  <span class="skill-tag">pytest</span>
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <article class="entry">
-          <h3>Research Geospatial Applications</h3>
-          <p>
-            At GFZ, I helped evolve prototype-style research applications into more structured client-server and
-            API-service workflows. I designed API services for querying, processing, and exposing geospatial research
-            datasets to React/TypeScript mapping and visualization frontends.
-          </p>
-          <p>
-            I also improved API boundaries, request/response structures, and integration patterns between frontend
-            and backend services, and migrated legacy Flask APIs to FastAPI.
-          </p>
-        </article>
+          <div class="divider"></div>
 
-        <article class="entry">
-          <h3>GeoInsight API</h3>
-          <p>
-            Personal portfolio project: a geospatial API backend with PostgreSQL/PostGIS integration, database sessions,
-            migrations, health checks, API test coverage, GitHub Actions CI workflows, and non-production deployment practice.
-          </p>
-        </article>
-      </section>
+          <div>
+            <p class="sidebar-section-label">Languages</p>
+            <ul class="lang-list">
+              <li>Persian <span class="lvl">Native</span></li>
+              <li>English <span class="lvl">C1</span></li>
+              <li>German <span class="lvl">B1</span></li>
+            </ul>
+          </div>
+        </aside>
 
-      <section>
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><strong>Languages:</strong> TypeScript, JavaScript, Python, SQL, Bash</li>
-          <li><strong>Frontend:</strong> React, Remix, Tailwind CSS, shadcn/ui, React Hook Form, frontend API integration, data-driven UI</li>
-          <li><strong>Backend:</strong> FastAPI, REST APIs, SQLAlchemy, Pydantic, API design, service/repository patterns</li>
-          <li><strong>Databases:</strong> PostgreSQL, PostGIS, Drizzle ORM, relational modeling, migrations, spatial queries</li>
-          <li><strong>Geospatial:</strong> PostGIS, GeoPandas, Shapely, Rasterio, Mapbox GL, Leaflet, OpenLayers, vector tiles, spatial filtering</li>
-          <li><strong>Tools:</strong> Docker, Docker Compose, Git, GitHub Actions, CI pipelines, pytest, Ruff</li>
-          <li><strong>Cloud:</strong> AWS/cloud deployment practice in personal and non-production projects</li>
-          <li><strong>Developer Productivity:</strong> Cursor, Codex, AI-assisted code review and task analysis</li>
-        </ul>
-      </section>
+        <!-- MAIN CONTENT -->
+        <main class="main">
+          <div class="section">
+            <div class="section-head"><h2>About</h2></div>
+            <p class="summary-text">
+              Full-Stack Developer with a geospatial background and professional
+              experience building web applications, backend APIs, data-driven
+              tools, and spatial data workflows. Strong practical experience
+              with TypeScript, React, Python, FastAPI, PostgreSQL, PostGIS,
+              Docker, and modern development workflows — across product and
+              research environments.
+            </p>
+          </div>
 
-      <section>
-        <h2>Education</h2>
-        <p><strong>M.Sc. Geospatial Information Systems (GIS)</strong>, University of Tehran, 09/2011 – 01/2014</p>
-        <p><strong>B.Sc. Civil Engineering – Surveying</strong>, National Geographical Organization of Iran, 09/2005 – 01/2011</p>
-      </section>
+          <div class="section">
+            <div class="section-head"><h2>Experience</h2></div>
 
-      <section>
-        <h2>Languages</h2>
-        <p>English: C1 · German: B1 · Persian: Native</p>
-      </section>
-    </main>
-  </div>
-</body>
+            <div class="job">
+              <div class="job-header">
+                <span class="job-role">Full-Stack Developer</span>
+                <span class="job-period">05/2025 – Present</span>
+              </div>
+              <p class="job-company">Green Account · Berlin</p>
+              <ul class="job-bullets">
+                <li>
+                  Build and maintain full-stack product features in a TypeScript
+                  platform using React, Remix, PostgreSQL/PostGIS, and Mapbox
+                  GL.
+                </li>
+                <li>
+                  Develop geospatial product workflows covering map interaction,
+                  spatial filtering, vector-tile rendering, and data visibility
+                  rules.
+                </li>
+                <li>
+                  Improve internal admin tools, table UX, navigation,
+                  login/onboarding tracking, and product workflows.
+                </li>
+                <li>
+                  Contribute across the delivery cycle — implementation,
+                  testing, code review, debugging, and CI workflows via GitHub
+                  Actions.
+                </li>
+                <li>
+                  Collaborate with CTO, product manager, and data engineer in a
+                  small cross-functional team.
+                </li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <span class="job-role">Full-Stack Developer</span>
+                <span class="job-period">09/2021 – 04/2025</span>
+              </div>
+              <p class="job-company">
+                German Research Centre for Geosciences (GFZ) · Potsdam
+              </p>
+              <ul class="job-bullets">
+                <li>
+                  Helped evolve prototype research applications into structured
+                  client-server and API-service workflows.
+                </li>
+                <li>
+                  Designed API services for querying, processing, and exposing
+                  geospatial datasets to React/TypeScript frontends.
+                </li>
+                <li>
+                  Improved API boundaries, request/response structures, and
+                  integration patterns between frontends and Python backends.
+                </li>
+                <li>
+                  Migrated legacy Flask APIs to FastAPI, improving
+                  maintainability and enabling a more modular backend
+                  architecture.
+                </li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <span class="job-role">Geospatial Backend Developer</span>
+                <span class="job-period">07/2020 – 07/2021</span>
+              </div>
+              <p class="job-company">NaghshAra Co. · Tehran</p>
+              <ul class="job-bullets">
+                <li>
+                  Developed Python backend APIs and spatial data workflows for
+                  GIS applications.
+                </li>
+                <li>
+                  Automated geospatial data transformation processes to improve
+                  accessibility and reduce manual processing.
+                </li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <span class="job-role">Software Developer</span>
+                <span class="job-period">02/2017 – 06/2020</span>
+              </div>
+              <p class="job-company">NaghshClick Co. · Tehran</p>
+              <ul class="job-bullets">
+                <li>
+                  Developed mobile data-collection and dashboard tools backed by
+                  MySQL-based data workflows.
+                </li>
+                <li>
+                  Supported GIS-related client discussions and operational
+                  reporting workflows.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><h2>Selected Projects</h2></div>
+
+            <div class="project-item">
+              <div class="project-header">
+                <p class="project-name">GeoInsight API</p>
+                <a
+                  class="project-link"
+                  href="https://github.com/arashmad/geoInsight-api"
+                  target="_blank"
+                  >github.com/arashmad/geoInsight-api</a
+                >
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Built and tested a geospatial API backend with
+                  PostgreSQL/PostGIS integration, database sessions, migrations,
+                  health checks, and API test coverage.
+                </li>
+                <li>
+                  Added GitHub Actions-based CI workflows for automated testing
+                  and quality checks.
+                </li>
+                <li>
+                  Practiced non-production cloud deployment workflows, including
+                  deploying backend services and connecting CI/CD to automated
+                  deployment processes.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-item">
+              <div class="project-header">
+                <p class="project-name">
+                  InsightPulse – SaaS Analytics Dashboard
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/arashmad/analytics-dashboard"
+                  target="_blank"
+                  >github.com/arashmad/analytics-dashboard</a
+                >
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Building a full-stack SaaS-style web application using Next.js
+                  App Router, React, TypeScript, Tailwind CSS, and shadcn/ui.
+                </li>
+                <li>
+                  Implemented email/password authentication, login/logout,
+                  password-reset flows, and protected dashboard routes using
+                  Better Auth.
+                </li>
+                <li>
+                  Designed a PostgreSQL data model with Drizzle ORM for users,
+                  workspaces, memberships, and projects — including migrations
+                  and deterministic seed data.
+                </li>
+                <li>
+                  Structured the application around thin route layers, reusable
+                  UI components, and feature-specific modules to keep frontend,
+                  domain, and data-access concerns separated.
+                </li>
+                <li>
+                  Added typed environment validation with Zod and a Docker
+                  Compose-based local PostgreSQL development environment.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><h2>Education</h2></div>
+
+            <div class="edu-item">
+              <p class="edu-degree">
+                M.Sc. Geospatial Information Systems (GIS)
+              </p>
+              <p class="edu-meta">
+                University of Tehran · 2011 – 2014 · Tehran
+              </p>
+            </div>
+
+            <div class="edu-item">
+              <p class="edu-degree">B.Sc. Civil Engineering – Surveying</p>
+              <p class="edu-meta">
+                National Geographical Organization of Iran · 2005 – 2011 ·
+                Tehran
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
