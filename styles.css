@@ -1,52 +1,45 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --eggshell: #f4f1de;
-  --terra: #e07a5f;
-  --navy: #3d405b;
-  --sage: #81b29a;
-  --sand: #f2cc8f;
+  --eggshell:   #F4F1DE;
+  --terra:      #E07A5F;
+  --navy:       #3D405B;
+  --sage:       #81B29A;
+  --sand:       #F2CC8F;
 
-  --black: #1e2030;
-  --gray-dark: #2e3147;
-  --gray-mid: #4a4e6b;
+  --black:      #1e2030;
+  --gray-dark:  #2e3147;
+  --gray-mid:   #4a4e6b;
   --gray-light: #7a7e99;
-  --border: #d6d4c6;
-  --bg: #fdfcf6;
+  --border:     #d6d4c6;
+  --bg:         #fdfcf6;
   --sidebar-bg: var(--eggshell);
-  --accent: var(--terra);
-  --tag-bg: #e8f1ec;
-  --tag-text: #3a6655;
+  --accent:     var(--terra);
+  --tag-bg:     #e8f1ec;
+  --tag-text:   #3a6655;
   --tag-border: #b5d4c5;
 
-  --fs-xs: 10px;
-  --fs-sm: 11px;
+  --fs-xs:   10px;
+  --fs-sm:   11px;
   --fs-base: 12px;
-  --fs-md: 13px;
-  --fs-lg: 15px;
-  --fs-xl: 18px;
-  --fs-2xl: 22px;
+  --fs-md:   13px;
+  --fs-lg:   15px;
+  --fs-xl:   18px;
+  --fs-2xl:  22px;
 }
 
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+html { font-size: 100%; -webkit-text-size-adjust: 100%; }
 
 body {
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
   font-size: var(--fs-base);
   color: var(--black);
   background: var(--bg);
   line-height: 1.65;
   min-height: 100vh;
 }
+
+/* ── LAYOUT ── */
 
 .page-wrap {
   max-width: 1100px;
@@ -64,6 +57,7 @@ body {
 }
 
 /* ── LEFT SIDEBAR ── */
+
 .sidebar {
   background: var(--sidebar-bg);
   border-right: 0.5px solid var(--border);
@@ -85,8 +79,8 @@ body {
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -126,6 +120,8 @@ body {
   opacity: 0.75;
 }
 
+/* Contact */
+
 .contact-list {
   list-style: none;
   display: flex;
@@ -159,6 +155,8 @@ body {
   text-decoration: underline;
 }
 
+/* Skills */
+
 .skills-group {
   display: flex;
   flex-direction: column;
@@ -187,6 +185,8 @@ body {
   white-space: nowrap;
 }
 
+/* Languages */
+
 .lang-list {
   list-style: none;
   display: flex;
@@ -207,6 +207,7 @@ body {
 }
 
 /* ── MAIN CONTENT ── */
+
 .main {
   padding: 48px 44px 64px;
 }
@@ -232,7 +233,7 @@ body {
 }
 
 .section-head::after {
-  content: "";
+  content: '';
   display: block;
   height: 0.5px;
   background: var(--border);
@@ -245,6 +246,8 @@ body {
   line-height: 1.7;
   max-width: 560px;
 }
+
+/* Experience */
 
 .job {
   margin-bottom: 22px;
@@ -301,13 +304,15 @@ body {
 }
 
 .job-bullets li::before {
-  content: "—";
+  content: '—';
   position: absolute;
   left: 0;
   color: var(--gray-light);
   font-size: var(--fs-xs);
   top: 2px;
 }
+
+/* Education */
 
 .edu-item {
   margin-bottom: 12px;
@@ -323,6 +328,8 @@ body {
   color: var(--gray-mid);
   margin-top: 1px;
 }
+
+/* Projects */
 
 .project-item {
   border: 0.5px solid var(--border);
@@ -377,7 +384,7 @@ body {
 }
 
 .project-bullets li::before {
-  content: "—";
+  content: '—';
   position: absolute;
   left: 0;
   color: var(--gray-light);
@@ -385,15 +392,51 @@ body {
   top: 2px;
 }
 
-/* ── RESPONSIVE ── */
+/* Publications */
+
+.pub-group {
+  margin-bottom: 20px;
+}
+
+.pub-group:last-child {
+  margin-bottom: 0;
+}
+
+.pub-group-label {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  margin-bottom: 10px;
+}
+
+.pub-item {
+  padding: 10px 0;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-size: var(--fs-sm);
+  color: var(--black);
+  line-height: 1.55;
+  margin-bottom: 3px;
+}
+
+.pub-meta {
+  font-size: var(--fs-xs);
+  color: var(--gray-light);
+  line-height: 1.4;
+}
+
+
+
 @media (max-width: 860px) {
-  .page-wrap {
-    border-left: none;
-    border-right: none;
-  }
-  .layout {
-    grid-template-columns: 1fr;
-  }
+  .page-wrap { border-left: none; border-right: none; }
+  .layout { grid-template-columns: 1fr; }
   .sidebar {
     position: static;
     height: auto;
@@ -401,14 +444,9 @@ body {
     border-right: none;
     border-bottom: 0.5px solid var(--border);
   }
-  .main {
-    padding: 32px 20px 48px;
-  }
+  .main { padding: 32px 20px 48px; }
 }
 
 @media (min-width: 861px) and (max-width: 1100px) {
-  .page-wrap {
-    border-left: none;
-    border-right: none;
-  }
+  .page-wrap { border-left: none; border-right: none; }
 }
